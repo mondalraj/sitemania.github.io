@@ -1,0 +1,4 @@
+Smooth Scroll Effect on scrolling and navigation
+Parallax effect
+Elements scroll animation
+Beautiful Hover effect animation

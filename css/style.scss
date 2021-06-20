@@ -1,0 +1,102 @@
+@import "varfunctions";
+@import "btn";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  max-height: 760px;
+  background-image: linear-gradient(
+      90deg,
+      rgb(18, 7, 41) 0%,
+      rgba(8, 21, 133, 0.8) 50%,
+      rgba(18, 7, 41, 1) 100%
+    ),
+    url(../images/heroimage.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+
+  .logo{
+    margin: 0 50px;
+    padding-top: 10px;
+  }
+  nav {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    a {
+      padding: 5px 30px;
+      font-size: fontSize(paragraph);
+      color: color(accent);
+      text-decoration: none;
+    }
+    .btn-login {
+      @extend .btn-login;
+    }
+    .btn-signup {
+      @extend .btn-signup;
+    }
+  }
+
+  .header-content {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    .img-logo {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75px;
+    }
+    div {
+      h1 {
+        font-size: 3.5rem;
+        margin: 0px;
+        letter-spacing: 5px;
+        color: fontColor(light);
+        text-align: center;
+      }
+      p {
+        font-size: fontSize(subheading);
+        text-align: center;
+        margin: 0;
+        color: fontColor(light);
+      }
+    }
+  }
+  .hero-illustration {
+    width: 40%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.templates {
+  padding: 70px 50px;
+  background-color: color(primary);
+}
