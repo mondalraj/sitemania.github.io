@@ -1,21 +1,73 @@
-.btn-login, .header nav .btn-login {
-  background-color: #40d3f8;
+.btn-login, #header nav .btn-login {
+  background-color: #5afa97f5;
   color: #292929;
   border-radius: 5px;
+  font-weight: 600;
 }
 
-.btn-signup, .header nav .btn-signup {
+.btn-signup, #header nav .btn-signup {
   margin-right: 10px;
-  border: 2px solid #40d3f8;
+  border: 2px solid #5afa97f5;
   border-radius: 5px;
   margin-left: 10px;
+  font-weight: 600;
+  color: #5afa97f5;
+}
+
+#templates .template-btn, #power .button {
+  border: 3px solid #1723c4;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: #1723c4;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#templates .template-flex .flex-item, #power .power-content .power-flex .flex-item .img-power {
+  border-radius: 5px;
+  background: linear-gradient(145deg, #7e7e7e, #7a7a7a);
+  -webkit-box-shadow: 3px 3px 5px #7e7e7e, -3px -3px 5px #5c5c5c;
+          box-shadow: 3px 3px 5px #7e7e7e, -3px -3px 5px #5c5c5c;
+}
+
+#banner-1, #banner-2 {
+  padding: 70px 50px;
+  background-color: #300cb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+#banner-1 h1, #banner-2 h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#banner-1 h4, #banner-2 h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -30,23 +82,23 @@ body {
   margin: 0 auto;
 }
 
-.header {
+#header {
   height: 100vh;
   max-height: 760px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#120729), color-stop(50%, rgba(8, 21, 133, 0.8)), to(#120729)), url(../images/heroimage.webp);
-  background-image: linear-gradient(90deg, #120729 0%, rgba(8, 21, 133, 0.8) 50%, #120729 100%), url(../images/heroimage.webp);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 9, 117, 0.9)), color-stop(50%, rgba(19, 2, 94, 0.8)), to(rgba(50, 9, 117, 0.9))), url(../images/heroimage.webp);
+  background-image: linear-gradient(90deg, rgba(50, 9, 117, 0.9) 0%, rgba(19, 2, 94, 0.8) 50%, rgba(50, 9, 117, 0.9) 100%), url(../images/heroimage.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 }
 
-.header .logo {
+#header .logo {
   margin: 0 50px;
   padding-top: 10px;
 }
 
-.header nav {
+#header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,23 +107,23 @@ body {
   top: 20px;
 }
 
-.header nav a {
+#header nav a {
   padding: 5px 30px;
   font-size: 1.2rem;
-  color: #40d3f8;
+  color: #fff;
   text-decoration: none;
 }
 
-.header .header-content {
+#header .header-content {
   width: 50%;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.header .header-content .img-logo {
+#header .header-content .img-logo {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -79,7 +131,7 @@ body {
   width: 75px;
 }
 
-.header .header-content div h1 {
+#header .header-content div h1 {
   font-size: 3.5rem;
   margin: 0px;
   letter-spacing: 5px;
@@ -87,24 +139,179 @@ body {
   text-align: center;
 }
 
-.header .header-content div p {
+#header .header-content div p {
   font-size: 1.8rem;
   text-align: center;
   margin: 0;
   color: #fff;
 }
 
-.header .hero-illustration {
+#header .hero-illustration {
   width: 40%;
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.templates {
+#templates {
   padding: 70px 50px;
-  background-color: #dbdbdb;
+  background-color: #eefbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#templates .template-content img {
+  display: block;
+  width: 5rem;
+  margin: 10px auto;
+}
+
+#templates .template-content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#templates .template-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#templates .template-flex .flex-item {
+  width: 25rem;
+  height: 15rem;
+  margin: 20px;
+}
+
+#templates .template-flex .item1 {
+  background-image: url(../images/template1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#templates .template-flex .item2 {
+  background-image: url(../images/template2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#templates .template-flex .item3 {
+  background-image: url(../images/template3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#templates .template-btn {
+  width: 200px;
+  margin: 20px auto;
+}
+
+#banner-1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3a0a70), color-stop(50%, rgba(76, 6, 117, 0.7)), to(#3a0a70)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='521' height='434.2' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.23'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: linear-gradient(90deg, #3a0a70 0%, rgba(76, 6, 117, 0.7) 50%, #3a0a70 100%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='521' height='434.2' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.23'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#power {
+  padding: 70px 50px;
+  background-color: #eefbff;
+  text-align: center;
+}
+
+#power .power-content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+#power .power-content .power-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 30px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#power .power-content .power-flex .flex-item {
+  width: 30%;
+  height: 300px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#power .power-content .power-flex .flex-item .img-power {
+  margin: 0 auto;
+  width: 20rem;
+  height: 15rem;
+  background-image: url(../images/ultra-performance.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#power .power-content .power-flex .flex-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: #352199;
+}
+
+#power .power-content .power-flex .flex-item .img2 {
+  background-image: url(../images/multilingual.jpg);
+}
+
+#power .power-content .power-flex .flex-item .img3 {
+  background-image: url(../images/woocommerce.png);
+}
+
+#power .power-content .power-flex .flex-item .img4 {
+  background-image: url(../images/responsive.jpg);
+}
+
+#power .power-content .power-flex .flex-item .img5 {
+  background-image: url(../images/adaptive.png);
+}
+
+#power .power-content .power-flex .flex-item .img6 {
+  background-image: url(../images/layout.png);
+}
+
+#power .button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#banner-2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3a0a70), color-stop(50%, rgba(76, 6, 117, 0.801)), to(#3a0a70)), url(../images/banner2.jpg);
+  background-image: linear-gradient(90deg, #3a0a70 0%, rgba(76, 6, 117, 0.801) 50%, #3a0a70 100%), url(../images/banner2.jpg);
+}
+
+#banner-2 h4 {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

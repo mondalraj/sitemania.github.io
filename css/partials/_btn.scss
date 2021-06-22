@@ -1,0 +1,29 @@
+@import "varfunctions";
+
+.btn-login {
+  background-color: color(accent);
+  color: fontColor(dark);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-signup {
+  margin-right: 10px;
+  border: 2px solid color(accent);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: color(accent);
+}
+
+%btn {
+  border: 3px solid rgb(23, 35, 196);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: rgb(23, 35, 196);
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
